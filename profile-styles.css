@@ -57,3 +57,8 @@ body {
   .nav-button:hover {
     background-color: #5c005c; /* Darker purple on hover */
   }
+
+  .illustrations-button:hover{
+    background-color: grey;
+
+  }
