@@ -1,27 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="profile-styles.css">
-  <title>About Me Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Portfolio</title>
 </head>
 <body>
-  <div class="container">
-    <div class="avatar-container">
-      <img src="Images/avatar.png" alt="Avatar">
-    </div>
-    <div class="notecard">
-      <h1>About Me</h1>
-        <p>Graduate From Rocky Mountain College of Art and Design, with a Bachelors degree in 2D Animation with Honors.
-          I love to bring art to life through animation and i have a passion for character design and creation. I know 
-          all the fundementals and techniques needed for a career in animation. Thank you for coming to my page, I hope you enjoy my work 
-        </p>
-    </div>
-  </div>
-  <div class="navigation">
-    <a href="illustrations.html" class="nav-button">Illustrations</a>
-    <a href="animations.html" class="nav-button">Animations</a>
-  </div>
+
+    <header>
+        <h1>Riley DeSpain</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#animations">Animations</a></li>
+                <li><a href="#illustrations">Illustrations</a></li>
+                <li><a href="#character">Character Creation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="profile-picture">
+            <img src="Images/avatar.png" alt="Your Profile Picture">
+        </div>
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p> Honors Graduate from Rocky Mountain College of Art and Design with a Bachelors Degree in 2D Animation.
+              I love to bring art to life through animation and I have a passion for character design and creation. 
+              I know all of the fundamentals and techniques needed for an animator. Thank you for coming to my page, 
+              I hope you enjoy my work!
+            </p>
+            <button onclick="navigateTo('animations')">Animations</button>
+            <button onclick="navigateTo('illustrations')">Illustrations</button>
+            <button onclick="navigateTo('character')">Character Creation</button>
+        </div>
+    </section>
+
+    <section id="animations">
+      <div class="animations-content">
+        <h2>Animations</h2>
+        <p>Showcase your animations and describe your skills.</p>
+        <button onclick="navigateTo('about')">About Me</button>
+        <button onclick="navigateTo('illustrations')">Illustrations</button>
+        <button onclick="navigateTo('character')">Character Creation</button>
+      </div>
+    </section>
+
+    <section id="illustrations">
+      <div class="illustrations-content">
+        <h2>Illustrations</h2>
+        <p>Display your illustrations and provide context or stories behind them.</p>
+        <button onclick="navigateTo('about')">About Me</button>
+        <button onclick="navigateTo('animations')">Animations</button>
+        <button onclick="navigateTo('character')">Character Creation</button>
+      </div>
+    </section>
+
+    <section id="character">
+      <div class="character-content">
+        <h2>Character Creation</h2>
+        <p>Share your character creations and any related information.</p>
+        <button onclick="navigateTo('about')">About Me</button>
+        <button onclick="navigateTo('animations')">Animations</button>
+        <button onclick="navigateTo('illustrations')">Illustrations</button>
+      </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Riley DeSpain | Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
